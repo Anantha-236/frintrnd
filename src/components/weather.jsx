@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Weather.css'; 
+import './Weather.css';
+import './weather.css';
 import searchicon from '../assets/search-icon.png';
 import X from '../assets/X.png';
 import Youtube from '../assets/Youtube.png';
