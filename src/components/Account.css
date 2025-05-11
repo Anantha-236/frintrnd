@@ -1,0 +1,121 @@
+/* Account.css */
+
+.account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    padding: 60px 48px; /* Increased padding */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(74, 144, 226, 0.10), 0 1.5px 6px rgba(0,0,0,0.04);
+    width: 100%;
+    max-width: 650px; /* Increased max-width */
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.form-container h2 {
+    color: #4a90e2;
+    font-size: 1.8rem; /* Reduced font size */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input {
+    padding: 12px 16px;
+    font-size: 0.9rem; /* Reduced font size */
+    outline: none;
+    background: #f8fafc;
+    transition: box-shadow 0.2s;
+}
+
+input:focus {
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.15);
+}
+
+button[type="submit"] {
+    padding: 12px 0;
+    font-size: 1rem; /* Reduced font size */
+    color: #fff;
+    background: linear-gradient(90deg, #4a90e2 60%, #6c5ce7 100%);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.08);
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #357ab8 60%, #4a90e2 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.toggle-btn {
+    background: none;
+    color: #4a90e2;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 0.9rem; /* Reduced font size */
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.toggle-btn:hover {
+    background: #4a90e2;
+    color: #fff;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem; /* Reduced font size */
+    animation: fadeIn 0.4s;
+}
+
+.success-message {
+    color: #2ecc71;
+    font-size: 0.9rem; /* Reduced font size */
+    animation: fadeIn 0.4s;
+}
+
+table {
+    width: 100%; /* Increased table size */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        padding: 24px 8px;
+        max-width: 95vw;
+    }
+    input, button {
+        font-size: 0.85rem; /* Adjusted for smaller screens */
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
